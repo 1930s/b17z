@@ -1,0 +1,122 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+:root {
+  --magic-potion: #FF495C;
+  --magic-potion-light: #FF4466;
+  --gunmetal: #292F36;
+  --malachite: #0CCE6B;
+  --baby-powder: #FCFCFC;
+  --stil-de-grain-yellow: #F4D35E;
+  --usc-gold: #FFCC00;
+  --medium-slate-blue: #7B68EE;
+  --content-animation: scale(0.7) rotateX(-230deg);
+  --ease: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --harsh-shadow: #333 -3rem 3.6rem 0.1rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  background-color: var(--magic-potion-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+ul {
+  list-style-type: none; }
+
+@font-face {
+  font-family: 'Aharoni Bold';
+  src: url("../../css/webfontkit-20181204-151917/ahronbd-webfont.eot");
+  src: url("../../css/webfontkit-20181204-151917/ahronbd-webfont.eot?#iefix") format("embedded-opentype"), url("../../css/webfontkit-20181204-151917/ahronbd-webfont.woff") format("woff"), url("../../css/webfontkit-20181204-151917/ahronbd-webfont.ttf") format("truetype"), url("../../css/webfontkit-20181204-151917/ahronbd-webfont.svg#webfont") format("svg"); }
+
+body {
+  font-family: 'Aharoni Bold', 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.7; }
+
+.card {
+  margin-bottom: 7rem;
+  border-radius: 3%;
+  height: 90vh;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--harsh-shadow); }
+  .card_container {
+    padding: 7vh 7vw;
+    perspective: 100rem; }
+  .card_headline {
+    font-size: 5.8rem;
+    font-weight: 700;
+    color: var(--baby-powder);
+    margin: 0 0 2.5rem 0; }
+  .card_divider {
+    height: 0.8rem;
+    background: var(--medium-slate-blue);
+    margin: 0 0 3.5rem 0; }
+  .card_intro-p {
+    font-size: 2.5rem;
+    color: var(--baby-powder); }
+  @media (max-width: 640px) {
+    .card {
+      height: 45vh; }
+      .card_container {
+        padding: 6vh 6vw; }
+      .card_headline {
+        font-size: 3.0rem; }
+      .card_intro-p {
+        font-size: 1.2rem; } }
+
+.magic-potion {
+  background-image: linear-gradient(to right, rgba(255, 73, 92, 0.8), rgba(123, 104, 238, 0.8)), url(../../images/placeholder-2.jpg); }
+
+.usc-gold {
+  background: var(--usc-gold); }
+
+.green {
+  background: #0CCE6B; }
+
+.pale-blue {
+  background: #7DE2D1; }

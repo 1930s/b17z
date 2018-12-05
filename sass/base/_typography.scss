@@ -1,0 +1,15 @@
+
+@font-face{ 
+	font-family: 'Aharoni Bold';
+	src: url('../../css/webfontkit-20181204-151917/ahronbd-webfont.eot');
+	src: url('../../css/webfontkit-20181204-151917/ahronbd-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../../css/webfontkit-20181204-151917/ahronbd-webfont.woff') format('woff'),
+	     url('../../css/webfontkit-20181204-151917/ahronbd-webfont.ttf') format('truetype'),
+	     url('../../css/webfontkit-20181204-151917/ahronbd-webfont.svg#webfont') format('svg');
+}
+
+body {
+    font-family: 'Aharoni Bold', 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+}

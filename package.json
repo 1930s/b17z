@@ -1,0 +1,18 @@
+{
+  "name": "b17z.io",
+  "version": "1.0.0",
+  "description": "Newly designed b17z.io from scratch",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server",
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "Bienvenido (Ben or B17Z)",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

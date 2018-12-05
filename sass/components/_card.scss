@@ -1,0 +1,82 @@
+.card {
+    margin-bottom: 7rem;
+    border-radius: 3%;
+    height: 90vh;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: var(--harsh-shadow);
+
+    &_container {
+        padding: 7vh 7vw;
+        perspective: 100rem;
+    }
+
+    // &_content {
+    //     will-change: transform;
+    //     transform: var(--content-animation);
+    //     transform-origin: center 80%;
+    //     opacity: 0;
+    //     transition: var(--ease);
+    // }
+
+    &_headline {
+        font-size: 5.8rem;
+        font-weight: 700;
+        color: var(--baby-powder);
+        margin: 0 0 2.5rem 0;
+    }
+
+    &_divider {
+        height: 0.8rem;
+        background: var(--medium-slate-blue);
+        margin: 0 0 3.5rem 0;
+    }
+
+    &_intro-p {
+        font-size: 2.5rem;
+        color: var(--baby-powder);
+    }
+
+    @media (max-width: 640px) {
+
+        height: 45vh;
+
+        &_container {
+            padding: 6vh 6vw;
+        }
+
+        &_headline {
+            font-size: 3.0rem;
+        }
+
+        &_intro-p {
+            font-size: 1.2rem;
+        }
+
+    }
+
+}
+
+.magic-potion {
+    // background: var(--magic-potion);
+    background-image: linear-gradient(
+            to right,
+            rgba($magic-potion, 0.80),
+            rgba($medium-slate-blue, 0.80)
+        ), url(../../images/placeholder-2.jpg);
+}
+
+.usc-gold {
+    background: var(--usc-gold);
+}
+
+.green {
+    background: $green;
+}
+
+.pale-blue {
+    background: $pale-blue;
+}

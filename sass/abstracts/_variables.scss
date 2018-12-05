@@ -1,0 +1,25 @@
+$magic-potion: #FF495C;
+$medium-slate-blue: #7B68EE;
+$green: #0CCE6B;
+$pale-blue: #7DE2D1;
+
+// Something I learned: I can't use CSS3 style variables in rgba function?
+:root {
+
+    // Colors
+    --magic-potion: #FF495C;
+    --magic-potion-light: #FF4466;
+    --gunmetal: #292F36;
+    --malachite: #0CCE6B;
+    --baby-powder: #FCFCFC;
+    --stil-de-grain-yellow: #F4D35E;
+    --usc-gold: #FFCC00;
+    --medium-slate-blue: #7B68EE;
+
+    // Animations
+    --content-animation: scale(0.7) rotateX(-230deg);
+    --ease: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    // Shadows
+    --harsh-shadow: #333 -3rem 3.6rem 0.1rem;
+}
