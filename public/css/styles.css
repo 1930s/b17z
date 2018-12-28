@@ -24,6 +24,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --stil-de-grain-yellow: #F4D35E;
   --usc-gold: #FFCC00;
   --medium-slate-blue: #7B68EE;
+  --mango-tango: #FA8334;
+  --brilliant-azure: #3A86FF;
   --content-animation: scale(0.7) rotateX(-230deg);
   --ease: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   --harsh-shadow: #333 -3rem 3.6rem 0.1rem; }
@@ -88,17 +90,34 @@ body {
     padding: 7vh 7vw;
     perspective: 100rem; }
   .card_headline {
-    font-size: 5.8rem;
+    font-size: 5.4rem;
     font-weight: 700;
     color: var(--baby-powder);
     margin: 0 0 2.5rem 0; }
   .card_divider {
     height: 0.8rem;
-    background: var(--medium-slate-blue);
+    background: var(--baby-powder);
     margin: 0 0 3.5rem 0; }
   .card_intro-p {
     font-size: 2.5rem;
-    color: var(--baby-powder); }
+    color: #333; }
+  .card_button {
+    text-decoration: none;
+    color: #333; }
+    .card_button, .card_button:link, .card_button:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      border-radius: 1rem;
+      transition: all .2s;
+      position: relative;
+      border: none;
+      cursor: pointer;
+      box-shadow: #333 -0.7rem 1.6rem 0.1rem;
+      background-color: var(--baby-powder); }
   @media (max-width: 640px) {
     .card {
       height: 45vh; }
@@ -110,7 +129,8 @@ body {
         font-size: 1.2rem; } }
 
 .magic-potion {
-  background-image: linear-gradient(to right, rgba(255, 73, 92, 0.8), rgba(123, 104, 238, 0.8)), url(../../images/placeholder-2.jpg); }
+  background-image: linear-gradient(to right, rgba(255, 73, 92, 0.8), rgba(123, 104, 238, 0.8)), url(../../images/placeholder-2.jpg);
+  background-repeat: no-repeat; }
 
 .usc-gold {
   background: var(--usc-gold); }
@@ -120,3 +140,38 @@ body {
 
 .pale-blue {
   background: #7DE2D1; }
+
+span {
+  color: var(--baby-powder); }
+
+.mango-tango {
+  height: 30vh;
+  border-radius: 0%;
+  background: var(--mango-tango); }
+
+.azure {
+  background: var(--brilliant-azure); }
+
+.bottom {
+  height: 7vh;
+  width: 95%;
+  box-shadow: var(--harsh-shadow);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .bottom_footer {
+    padding: 5vh 5vw;
+    perspective: 100rem; }
+  .bottom_content {
+    font-family: 'Crimson Text', sans-serif;
+    color: var(--gunmetal);
+    font-size: 1.5rem;
+    margin-right: 5rem; }
+
+.baby-powder {
+  background: var(--baby-powder); }
+
+.links {
+  text-decoration: underline;
+  color: var(--gunmetal); }

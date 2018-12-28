@@ -14,16 +14,8 @@
         perspective: 100rem;
     }
 
-    // &_content {
-    //     will-change: transform;
-    //     transform: var(--content-animation);
-    //     transform-origin: center 80%;
-    //     opacity: 0;
-    //     transition: var(--ease);
-    // }
-
     &_headline {
-        font-size: 5.8rem;
+        font-size: 5.4rem;
         font-weight: 700;
         color: var(--baby-powder);
         margin: 0 0 2.5rem 0;
@@ -31,13 +23,40 @@
 
     &_divider {
         height: 0.8rem;
-        background: var(--medium-slate-blue);
+        background: var(--baby-powder);
         margin: 0 0 3.5rem 0;
     }
 
     &_intro-p {
         font-size: 2.5rem;
-        color: var(--baby-powder);
+        color: #333;
+    }
+
+    &_button {
+        &,
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 4rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            border-radius: 1rem;
+            transition: all .2s;
+            position: relative;
+    
+            border: none;
+            cursor: pointer;
+    
+            box-shadow: #333 -0.7rem 1.6rem 0.1rem;
+
+            background-color: var(--baby-powder);
+        }
+
+        text-decoration: none;
+        color: #333;
+        
     }
 
     @media (max-width: 640px) {
@@ -49,25 +68,24 @@
         }
 
         &_headline {
-            font-size: 3.0rem;
+            font-size: 1.7rem;
         }
 
         &_intro-p {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
-
     }
-
 }
 
 .magic-potion {
-    // background: var(--magic-potion);
     background-image: linear-gradient(
             to right,
             rgba($magic-potion, 0.80),
             rgba($medium-slate-blue, 0.80)
         ), url(../../images/placeholder-2.jpg);
+    background-repeat: no-repeat;
 }
+
 
 .usc-gold {
     background: var(--usc-gold);
@@ -79,4 +97,18 @@
 
 .pale-blue {
     background: $pale-blue;
+}
+
+span {
+    color: var(--baby-powder);
+}
+
+.mango-tango {
+    height: 30vh; //overwrite
+    border-radius: 0%; //overwrite
+    background: var(--mango-tango);
+}
+
+.azure {
+    background: var(--brilliant-azure);
 }

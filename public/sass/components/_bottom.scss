@@ -1,0 +1,31 @@
+.bottom {
+    height: 7vh;
+    width: 95%;
+    box-shadow: var(--harsh-shadow);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_footer {
+        padding: 5vh 5vw;
+        perspective: 100rem;
+    }
+
+    &_content {
+        font-family: 'Crimson Text', sans-serif;
+        color: var(--gunmetal);
+        font-size: 1.5rem;
+        margin-right: 5rem;
+    }
+}
+
+.baby-powder {
+    background: var(--baby-powder);
+}
+
+.links {
+    text-decoration: underline;
+    color: var(--gunmetal);
+    // margin-right: 5rem;
+}
