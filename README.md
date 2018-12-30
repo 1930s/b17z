@@ -2,6 +2,11 @@
 B17Z Landing Page
 
 # Why Did I Create This
+
+![b17z](b17z.png)
+
+Screenshot taken with [Screen Guru](https://screen.guru)
+
 I wanted to have my own landing page that I created from scratch. Figured it was good practice for web development.
 
 # How to Use
