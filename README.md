@@ -26,6 +26,7 @@ npm run start
 # Technologies Used
 - HTML5
 - [Sass](https://sass-lang.com/). My preferred styling option.
+- CSS Flexbox
 - [Firebase](https://firebase.google.com/) for hosting.
 
 # Future Features
