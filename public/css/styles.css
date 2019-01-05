@@ -26,6 +26,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --medium-slate-blue: #7B68EE;
   --mango-tango: #FA8334;
   --brilliant-azure: #3A86FF;
+  --princess-perfume: #FF88DC;
   --content-animation: scale(0.7) rotateX(-230deg);
   --ease: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   --harsh-shadow: #333 -3rem 3.6rem 0.1rem; }
@@ -124,9 +125,9 @@ body {
       .card_container {
         padding: 6vh 6vw; }
       .card_headline {
-        font-size: 3.0rem; }
+        font-size: 1.7rem; }
       .card_intro-p {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
 
 .magic-potion {
   background-image: linear-gradient(to right, rgba(255, 73, 92, 0.8), rgba(123, 104, 238, 0.8)), url(../../images/placeholder-2.jpg);
@@ -151,6 +152,9 @@ span {
 
 .azure {
   background: var(--brilliant-azure); }
+
+.princess-perfume {
+  background: var(--princess-perfume); }
 
 .bottom {
   height: 7vh;
